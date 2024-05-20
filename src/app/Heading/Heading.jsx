@@ -6,6 +6,7 @@ import { FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { SiAdobephotoshop } from "react-icons/si";
 import coding2Image from "../../../public/Images/Coding6.png"; 
+import Image from "next/image";
 
 
 function Heading() {
@@ -16,7 +17,7 @@ function Heading() {
         <div className="heading" id="heading">
 
             <div className="imgBox">
-                <img src="/images/Coding6.png" alt="boy coding" />
+                <Image className="w-20 h-20" src="/images/Coding6.png" alt="boy coding" />
             </div>
             <div className="cartel">
                 <div className="caja-texto">

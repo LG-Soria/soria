@@ -7,6 +7,7 @@ import proyecto2 from "../../../public/Images/proyecto3.jpg"
 import proyecto4 from "../../../public/Images/proyecto4.png"
 import proyecto5 from '../../../public/Images/proyecto5.jpg'
 import proyecto6 from "../../../public/Images/proyecto6.png"
+import Image from 'next/image';
 
 
 
@@ -77,7 +78,7 @@ function Proyectos() {
           {proyectList.map((image, index) => {
             return (
               <li className='item ' key={index}><a href={image.link} target="_blank" rel="noreferrer">
-                <img className='' key={index} src={image.src} alt={image.title} />
+                <Image className='w-10 h-10' key={index} src={image.src} alt={image.title} />
                 <div className='item__text'>
                   <p className='item__title'>{image.title}</p>
                   <a href={image.linkGithub} rel="noreferrer" className='span' target="_blank"> <FaGithub className='icon'/></a>
