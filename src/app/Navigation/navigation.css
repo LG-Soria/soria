@@ -1,0 +1,67 @@
+@keyframes enhance-header {
+  to {
+    background-color: #000;
+    height: 80px;
+    color: #ff7a00;
+  }
+}
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: sticky;
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: 500;
+
+  animation: enhance-header linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 500px;
+}
+
+
+.logo {
+  grid-area: 1/2/2/3;
+  margin: auto;
+}
+.logo > p {
+  font-size: 3rem;
+  font-family: "Poller One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.menu {
+  grid-column: 5/9;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+}
+
+.menu > ul > li {
+  width: 8rem;
+  height: 49px;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+  transition-property: background-color, bottom,right;
+}
+.menu > ul > li:hover,
+.menu > ul > li:active,
+.menu > ul > li:focus {
+  background-color: #ff7a00;
+  color: white;
+  box-shadow: 2px 4px 5px 1px rgba(0, 0, 0, 0.37);
+  position: relative;
+  bottom: 0.1rem;
+  right: 0.3rem;
+}

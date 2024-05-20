@@ -1,0 +1,302 @@
+@keyframes revealOnLeft {
+  from{
+    left:   100px;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes revealOnOpacity {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes move-circle-1 {
+  to {
+    opacity: 1;
+    bottom: 250px;
+  }
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  height: 100%;
+ 
+}
+
+
+.contacto__titulo {
+  font-family: "Poller One", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  grid-row: 2/3;
+  grid-column: 7/13;
+  width: 100%;
+  height: 100%;
+ 
+}
+.contacto__titulo h3{
+  animation: revealOnLeft linear both;
+  animation-timeline: view();
+  position: relative;
+  
+  width: 600px;
+ animation-range: 0 600px;
+}
+.contacto__subline {
+  width: 51.9rem;
+  height: 0.8rem;
+  position: relative;
+  background-color: black;
+}
+
+.contacto__texto,
+.contacto__formulario{
+  animation: revealOnOpacity cubic-bezier(0.165, 0.84, 0.44, 1) both;
+  animation-timeline: view();
+  animation-range: 0 1200px;
+  opacity: 0;
+}
+
+.contacto__texto {
+  grid-row: 3/7;
+  grid-column: 3/7;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  align-items: center;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contacto__texto > h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.contacto__texto > p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+.contacto__formulario {
+  margin-top: 2.7rem;
+  grid-row: 3/7;
+  grid-column: 7/12;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  width: 32.2rem;
+  height: 570px;
+  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.199);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  border: 1px solid #dddddd;
+}
+
+.contacto__formulario > div {
+  margin: 2.5rem 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.inputbox {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0px 40px 0px;
+  border-radius: 10px;
+  background-color: #0066ff21;
+}
+
+.inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;  
+
+}
+
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  font-size: 1em;
+  color:  #002e72c0;
+  letter-spacing: 00.05em;
+  transition: 0.5s;
+  pointer-events: none;
+  font-weight: 600;
+}
+
+.inputbox input:valid ~span,
+.inputbox input:focus ~span {
+  color: #000;
+  transform: translateX(-10px) translateY(-45px);
+  font-weight: 600;
+}
+
+.inputbox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+  height: 44px;
+}
+.contacto__textarea {
+  position: relative;
+  width: 100%;
+  height: 158px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background-color: #0066ff21;
+
+}
+.contacto__textarea  textarea {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #636574;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 11;  
+}
+.contacto__textarea span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  font-size: 1em;
+  color: #002e72c0;
+  letter-spacing: 00.05em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.contacto__textarea  textarea:focus ~ span,
+.contacto__textarea  textarea:valid ~ span {
+  color: #000;
+  transform: translateX(-10px) translateY(-45px);
+  font-weight: 600;
+}
+.contacto__textarea  textarea:valid ~i,
+.contacto__textarea  textarea:focus ~i {
+  height: 44px;
+}
+
+.contacto__texto > p > a {
+  cursor: pointer;
+}
+
+.linkedin {
+  color: #0e76a8;
+}
+
+.twitter {
+  color: #26a7de;
+}
+.github {
+  color: #333;
+}
+
+.outlook {
+  color: #0078d7;
+}
+
+.instagram {
+  color: #c13584;
+}
+
+.contacto__button {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 3rem;
+  bottom: 2rem;
+  position: relative;
+}
+.contacto__button > button {
+  width: 7rem;
+  height: 3rem;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  background-color: #619ecfad;
+  transition-duration: 1s;
+  transition-property: scale,font-weight, background-color, color;
+}
+
+.contacto__button > button:hover {
+  background-color: #2f009cb6;
+  color: white;
+  font-weight: 600;
+  scale: 1.1;
+  position: relative;
+}
+.circleContainer{
+  position: relative;
+  overflow: hidden;
+  grid-column: 8/13;
+  grid-row: 4/12;
+z-index: -101;
+
+}
+
+.contacto__circle4 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+z-index: -100;
+  top: 0;
+  left: 0;
+}
+
+.contacto__circle4::before {
+  content: "";
+  background-image: radial-gradient(circle 410px, #0055ff7a, #ffffff00);
+  border-radius: 50%;
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  z-index: -110;
+}
+
