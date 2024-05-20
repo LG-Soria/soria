@@ -4,9 +4,9 @@ import Heading from "./Heading/Heading";
 import Proyectos from "./Projects/Proyectos";
 import Contacto from "./Contact/Contacto";
 import "./Navigation/navigation.css";
-import "./Heading/Heading.css";
-import "./Projects/Proyectos.css";
-import "./Contact/Contacto.css";
+import "./Heading/heading.css";
+import "./Projects/proyectos.css";
+import "./Contact/contacto.css";
 
 export default function Home() {
   return (
