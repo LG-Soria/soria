@@ -76,7 +76,7 @@ function Proyectos() {
         <ul>
           {proyectList.map((image, index) => {
             return (
-              <li className='item '><a href={image.link} target="_blank" rel="noreferrer">
+              <li className='item ' key={index}><a href={image.link} target="_blank" rel="noreferrer">
                 <img className='' key={index} src={image.src} alt={image.title} />
                 <div className='item__text'>
                   <p className='item__title'>{image.title}</p>
