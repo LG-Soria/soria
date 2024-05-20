@@ -78,7 +78,8 @@ function Proyectos() {
           {proyectList.map((image, index) => {
             return (
               <li className='item ' key={index}><a href={image.link} target="_blank" rel="noreferrer">
-                <Image className='w-10 h-10' key={index} src={image.src} alt={image.title} />
+                <Image className='image'  width={500}
+                height={500} key={index} src={image.src} alt={image.title} />
                 <div className='item__text'>
                   <p className='item__title'>{image.title}</p>
                   <a href={image.linkGithub} rel="noreferrer" className='span' target="_blank"> <FaGithub className='icon'/></a>

@@ -17,7 +17,9 @@ function Heading() {
         <div className="heading" id="heading">
 
             <div className="imgBox">
-                <Image className="w-20 h-20" src="/images/Coding6.png" alt="boy coding" />
+                <Image 
+                width={800}
+                height={800} src="/images/Coding6.png" alt="boy coding" />
             </div>
             <div className="cartel">
                 <div className="caja-texto">
