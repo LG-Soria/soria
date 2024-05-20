@@ -15,7 +15,7 @@ function Proyectos() {
   const proyectList = [
     {
       id: 1,
-      src: "/images/proyecto1.jpg",
+      src: "../images/proyecto1.jpg",
       alt: (id) => `Proyecto ${id}`,
       title: "Apperia Landing page",
       link: "https://lg-soria.github.io/Apeperia-responsive/",
@@ -23,7 +23,7 @@ function Proyectos() {
     },
     {
       id: 2,
-      src:  "/images/proyecto2.jpg",
+      src:  "../images/proyecto2.jpg",
       alt: (id) => `Proyecto ${id}`,
       title: "Blog page",
       link: "https://lg-soria.github.io/NewHomepageMain/",
