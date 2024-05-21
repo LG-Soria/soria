@@ -65,9 +65,11 @@
   bottom: 0.1rem;
   right: 0.3rem;
 }
-.responsiveMenu {
+.responsiveMenu,
+.iconsMenu {
   display: none;
 }
+
 
 @media screen and (max-width: 430px) {
 
@@ -77,6 +79,9 @@
   }
   .menu{
     display: none;
+  }
+  .iconsMenu{
+    display: inline-block;
   }
   .responsiveMenu {
     overflow: hidden;
@@ -96,7 +101,7 @@
     border-radius: 5px;
     font-weight: 700;
     transition-property: right, opacity;
-    transition-duration: 1s;
+    transition-duration: 800ms;
     transition-timing-function: ease-in;
     top: -5px;
     background-color: rgba(18, 107, 240, 1);

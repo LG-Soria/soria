@@ -12,7 +12,7 @@ function Navigation() {
     return (
         <div className='navigation'>
             <div className='logo'><p>LS</p></div>
-            <div className="submenus">
+            <div className="iconsMenu">
                 <IoMenu className={menu ? ('hidden') : ("burguerMenu")} onClick={openMenu} />
                 <IoCloseSharp
                     onClick={openMenu}
