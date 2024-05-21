@@ -15,7 +15,7 @@
   }
 }
 
-@keyframes move_circletwo{
+@keyframes move_circletwo {
   to {
     bottom: 600px;
   }
@@ -38,6 +38,7 @@
   animation-timeline: scroll(root);
   animation-range: 0 460px;
 }
+
 .imgBox img {
   width: 600px;
   height: 600px;
@@ -99,6 +100,7 @@
   font-size: 1.27rem;
   bottom: 1.1rem;
 }
+
 .iconos {
   grid-column: 7/12;
   grid-row: 8/9;
@@ -141,7 +143,6 @@
   bottom: 0px;
 }
 
-
 .circle-one::after {
   content: "";
   background-image: radial-gradient(circle 600px, #00a3ffa9, #ffffff00);
@@ -161,7 +162,6 @@
 .circle-two {
   width: 100%;
   height: 100%;
-
 }
 
 .circle-two::after {
@@ -178,9 +178,7 @@
   animation-timeline: scroll(root);
   animation-range: 0 800px;
 }
-
-
-.heading__circle2Container{
+.heading__circle2Container {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -188,4 +186,74 @@
   grid-column: 11/13;
   grid-row: 1/12;
   bottom: 100px;
+}
+
+@media screen and (max-width: 390px) {
+  .heading {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 100vw;
+    margin: 0 10px;
+
+  }
+  .imgBox {
+    display: none;
+  }
+  .cartel {
+    grid-row: 1/8;
+    grid-column: 1/5;
+    position: relative;
+    opacity: 1;
+    left: 0px;
+    width: 95vw;
+    height: 300px;
+    animation: reveal linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 500px;
+  }
+  .cartel--nombre {
+    font-size: 3.8rem;
+    line-height: 65px;
+    color: #00a3ff;
+  }
+  .caja-texto > p {
+    font-size: 1.7rem;
+    top: 10px;
+    left: -10px;
+  }
+  .caja-texto > h1 {
+    position: relative;
+    font-size: 1.4rem;
+    bottom: 0rem;
+  }
+  .iconos {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    right: 0rem;
+    bottom: 0rem;
+    top: 60px;
+    position: relative;
+    width: 90vw;
+    animation: reveal linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 500px;
+    position: relative;
+  }
+
+  .texto {
+    grid-column: 1/5;
+    grid-row: 4/5;
+    right: -10px;
+    width: 85vw;
+    position: relative;
+    animation: reveal linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 500px;
+    position: relative;
+  }
+  .heading__circle2Container,
+  .circle-one {
+    display: none;
+  }
+  
 }

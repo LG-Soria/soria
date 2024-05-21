@@ -25,7 +25,7 @@ function Heading() {
                 <div className="caja-texto">
                     <p className="">Hola mi nombre es</p>
                     <span className="cartel--nombre">Lucas G. Soria</span>
-                    <h1>FRONT-END DEVELOPER & DESIGNER</h1>
+                    <h1>FRONT-END DEVELOPER</h1>
                 </div>
             </div>
 

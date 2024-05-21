@@ -1,6 +1,6 @@
 @keyframes revealOnLeft {
-  from{
-    left:   100px;
+  from {
+    left: 100px;
     opacity: 0;
   }
   to {
@@ -26,9 +26,7 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(6, 1fr);
   height: 100%;
- 
 }
-
 
 .contacto__titulo {
   font-family: "Poller One", serif;
@@ -41,15 +39,14 @@
   grid-column: 7/13;
   width: 100%;
   height: 100%;
- 
 }
-.contacto__titulo h3{
+.contacto__titulo h3 {
   animation: revealOnLeft linear both;
   animation-timeline: view();
   position: relative;
-  
+
   width: 600px;
- animation-range: 0 600px;
+  animation-range: 0 600px;
 }
 .contacto__subline {
   width: 51.9rem;
@@ -59,7 +56,7 @@
 }
 
 .contacto__texto,
-.contacto__formulario{
+.contacto__formulario {
   animation: revealOnOpacity cubic-bezier(0.165, 0.84, 0.44, 1) both;
   animation-timeline: view();
   animation-range: 0 1200px;
@@ -116,7 +113,6 @@
   flex-direction: column;
 }
 
-
 .inputbox {
   position: relative;
   width: 100%;
@@ -138,8 +134,7 @@
   font-size: 1em;
   letter-spacing: 0.05em;
   transition: 0.5s;
-  z-index: 10;  
-
+  z-index: 10;
 }
 
 .inputbox span {
@@ -147,15 +142,15 @@
   left: 0;
   padding: 20px 10px 10px;
   font-size: 1em;
-  color:  #002e72c0;
+  color: #002e72c0;
   letter-spacing: 00.05em;
   transition: 0.5s;
   pointer-events: none;
   font-weight: 600;
 }
 
-.inputbox input:valid ~span,
-.inputbox input:focus ~span {
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span {
   color: #000;
   transform: translateX(-10px) translateY(-45px);
   font-weight: 600;
@@ -173,8 +168,8 @@
   z-index: 9;
 }
 
-.inputbox input:valid ~i,
-.inputbox input:focus ~i {
+.inputbox input:valid ~ i,
+.inputbox input:focus ~ i {
   height: 44px;
 }
 .contacto__textarea {
@@ -184,9 +179,8 @@
   margin-bottom: 50px;
   border-radius: 10px;
   background-color: #0066ff21;
-
 }
-.contacto__textarea  textarea {
+.contacto__textarea textarea {
   position: relative;
   width: 100%;
   height: 160px;
@@ -199,7 +193,7 @@
   font-size: 1em;
   letter-spacing: 0.05em;
   transition: 0.5s;
-  z-index: 11;  
+  z-index: 11;
 }
 .contacto__textarea span {
   position: absolute;
@@ -211,14 +205,14 @@
   transition: 0.5s;
   pointer-events: none;
 }
-.contacto__textarea  textarea:focus ~ span,
-.contacto__textarea  textarea:valid ~ span {
+.contacto__textarea textarea:focus ~ span,
+.contacto__textarea textarea:valid ~ span {
   color: #000;
   transform: translateX(-10px) translateY(-45px);
   font-weight: 600;
 }
-.contacto__textarea  textarea:valid ~i,
-.contacto__textarea  textarea:focus ~i {
+.contacto__textarea textarea:valid ~ i,
+.contacto__textarea textarea:focus ~ i {
   height: 44px;
 }
 
@@ -262,7 +256,7 @@
   border: 1px solid rgba(0, 0, 0, 0.13);
   background-color: #619ecfad;
   transition-duration: 1s;
-  transition-property: scale,font-weight, background-color, color;
+  transition-property: scale, font-weight, background-color, color;
 }
 
 .contacto__button > button:hover {
@@ -272,20 +266,19 @@
   scale: 1.1;
   position: relative;
 }
-.circleContainer{
+.circleContainer {
   position: relative;
   overflow: hidden;
   grid-column: 8/13;
   grid-row: 4/12;
-z-index: -101;
-
+  z-index: -101;
 }
 
 .contacto__circle4 {
   width: 500px;
   height: 500px;
   position: relative;
-z-index: -100;
+  z-index: -100;
   top: 0;
   left: 0;
 }
@@ -300,3 +293,54 @@ z-index: -100;
   z-index: -110;
 }
 
+@media screen and (max-width: 390px) {
+  .contacto {
+  grid-template-rows: repeat(7, 1fr);
+    width: 100vw;
+    height: 1500px;
+  }
+  .contacto__titulo {
+    font-size: 3rem;
+    margin-top: 0rem;
+    grid-row: 2/3;
+    grid-column: 2/13;
+  }
+  .contacto__titulo h3 {
+    width: 100vw;
+  }
+  .contacto__subline {
+    width: 92vw;
+    height: 0.8rem;
+  }
+  .contacto__texto {
+    grid-row: 3/5;
+    grid-column: 2/11;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    align-items: center;
+    margin-top: 0rem;
+    text-align: center;
+  }
+  .contacto__texto > p {
+    font-size: 1.1rem;
+  }
+  .contacto__formulario {
+    grid-row: 6/7;
+    grid-column: 1/12;
+    margin: 1rem 1rem;
+    width: 90vw;
+    height: 570px;
+  }
+  .contacto__formulario > div {
+    margin: 2.5rem 2rem;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .circleContainer,
+  .contacto__circle4 {
+    display: none;
+  }
+}

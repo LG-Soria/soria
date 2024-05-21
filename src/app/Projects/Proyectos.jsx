@@ -77,15 +77,16 @@ function Proyectos() {
         <ul>
           {proyectList.map((image, index) => {
             return (
-              <li className='item ' key={index}><a href={image.link} target="_blank" rel="noreferrer">
+              <li className='item ' key={index}>
+              
                 <Image className='image'  width={500}
                 layout="responsive"
                 height={500} key={index} src={image.src} alt={image.title} />
                 <div className='item__text'>
-                  <p className='item__title'>{image.title}</p>
+                <a href={image.link} target="_blank" rel="noreferrer"><p className='item__title'>{image.title}</p></a>
                   <a href={image.linkGithub} rel="noreferrer" className='span' target="_blank"> <FaGithub className='icon'/></a>
                 </div>
-                </a> </li>
+                 </li>
             )
           })}
 
