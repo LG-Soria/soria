@@ -68,7 +68,7 @@
 .closeMenu {
   display: none;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 430px) {
   .logo > p {
     font-size: 3rem;
     width: 50%;
