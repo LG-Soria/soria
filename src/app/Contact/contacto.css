@@ -9,6 +9,9 @@
   }
 }
 @keyframes revealOnOpacity {
+  from{
+    opacity: 0;
+  }
   to {
     opacity: 1;
   }
@@ -300,6 +303,9 @@
   }
   .contacto__titulo h3 {
     width: 100vw;
+    animation: revealOnOpacity linear both;
+    animation-timeline: view();
+
   }
   .contacto__subline {
     width: 90vw;
