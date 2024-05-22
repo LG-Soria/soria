@@ -223,12 +223,9 @@
 .contacto__textarea textarea:focus ~ i {
   height: 44px;
 }
-.contacto__texto > p > a{
-  transition-property: text-decoration;
-  transition-duration: 800ms;
-  transition-timing-function: ease-in-out;
-}
+
 .contacto__texto > p > a:hover {
+  font-weight: 500;
   cursor: pointer;
   text-decoration: underline; 
 }

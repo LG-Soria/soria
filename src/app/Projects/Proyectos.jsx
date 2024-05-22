@@ -15,7 +15,7 @@ function Proyectos() {
   const proyectList = [
     {
       id: 1,
-      src: "/Images/proyecto1.jpg",
+      src: "/Images/proyecto2.jpg",
       alt: (id) => `Proyecto ${id}`,
       title: "Apperia Landing page",
       link: "https://lg-soria.github.io/Apeperia-responsive/",
@@ -23,7 +23,7 @@ function Proyectos() {
     },
     {
       id: 2,
-      src: "/Images/proyecto2.jpg",
+      src: "/Images/proyecto3.jpg",
       alt: (id) => `Proyecto ${id}`,
       title: "Blog page",
       link: "https://lg-soria.github.io/NewHomepageMain/",
@@ -31,7 +31,7 @@ function Proyectos() {
     },
     {
       id: 3,
-      src: "/Images/proyecto3.jpg",
+      src: "/Images/proyecto1.jpg",
       alt: (id) => `Proyecto ${id}`,
       title: "Portfolio Photography",
       link: "https://lg-soria.github.io/photography-album-web/",
@@ -43,7 +43,7 @@ function Proyectos() {
       src: "/Images/proyecto4.png",
       alt: (id) => `Proyecto ${id}`,
       title: "Burguer Store",
-      link: "www.github.com/lg-soria/landingpage",
+      link: "https://lg-soria.github.io/burger-project/",
       linkGithub: "https://github.com/LG-Soria/burger-project"
 
     },
@@ -61,7 +61,7 @@ function Proyectos() {
       src: "/Images/proyecto6.png",
       alt: (id) => `Proyecto ${id}`,
       title: "Clothes Store ",
-      link: "www.github.com/lg-soria/landingpage",
+      link: "https://outfit-project.vercel.app/",
       linkGithub: "https://github.com/LG-Soria/outfit-project"
     },
 
