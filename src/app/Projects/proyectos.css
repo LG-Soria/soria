@@ -319,7 +319,7 @@ li,
 @media  (max-width: 480px) {
   .proyectos__container{
     height: 1200px;
-    width: 470px;
+    width: calc(100vw - 10px);
   }
   .titulo {
     grid-column: 2/12;

@@ -327,7 +327,7 @@
 @media screen and (max-width: 480px) {
   .contacto {
     grid-template-rows: repeat(7, 1fr);
-    width: 475px;
+    width: calc(100vw - 10px);
     height: 1500px;
   }
   .contacto__titulo {
