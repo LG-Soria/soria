@@ -71,8 +71,8 @@ function Proyectos() {
     <div className='proyectos__container' >
 
       <div className='titulo' id='project'><h2>Proyectos</h2>
-        <div className='subline'></div></div>
-
+      </div>
+{/**  <div className='subline'></div> */}
       <div className='proyectos'>
         <ul>
           {proyectList.map((image, index) => {
@@ -100,11 +100,12 @@ function Proyectos() {
       </div>
  { /**  <div className='proyectos__circle1Container'> 
    
+    </div>
+        <div className='proyectos__circle2Container'>
+      <div className='contacto__circle2'></div>
     </div> */}
      <div className='contacto__circle1'></div>
-    <div className='proyectos__circle2Container'>
-      <div className='contacto__circle2'></div>
-    </div>
+
 
     </div>
   )

@@ -37,6 +37,8 @@
   animation: reveal linear both;
   animation-timeline: scroll(root);
   animation-range: 0 460px;
+  grid-column: 1/6;
+
 }
 
 .imgBox img {
@@ -89,7 +91,7 @@
   font-size: 2rem;
   position: relative;
   top: 1.6rem;
-  color: #555555;
+  color: #000;
 }
 .cartel--nombre {
   font-size: 3.7rem;

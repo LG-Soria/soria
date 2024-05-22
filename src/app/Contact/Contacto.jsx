@@ -8,63 +8,60 @@ function Contacto() {
     const form = useRef();
 
     const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs
-        .sendForm("service_ddwtokk","template_xhqu1m9", form.current, {
-          publicKey: 'U9vlhEpi09vVrMPrX',
-        })
-        .then(
-          () => {
-            console.log('SUCCESS!');
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          },
-        );
+        e.preventDefault();
+
+        emailjs
+            .sendForm("service_ddwtokk", "template_xhqu1m9", form.current, {
+                publicKey: 'U9vlhEpi09vVrMPrX',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
     };
-  
+
     return (
         <div className='contacto' id='contact'>
-           
-                <div className='contacto__titulo'>
-                    <h3 >Contacto</h3>
-                    <div className='contacto__subline'></div>
-              
+
+            <div className='contacto__titulo'>
+                <h3 >Contacto</h3>
             </div>
+            {/**           <div className='contacto__subline'></div> */}
 
             <div className='contacto__texto'>
                 <h4>¿Te queres comunicar conmigo?</h4>
                 <p>
-                    Podes hacerlo a travez de mis redes sociales, voy a estar para
-                    responderte tanto en <a  href='https://www.linkedin.com/in/lucas-soria-g/' target='/blank' rel="noreferrer"  className='linkedin'>Linkedin</a>,  
-                     <a  href='https://x.com/_LSoria' target='/blank' rel="noreferrer" className='twitter'> Twitter</a>,  
-                    <a href='https://www.instagram.com/lucas.g996/' target='/blank' rel="noreferrer" className='instagram'> Instagram</a> y 
+                    Puedes hacerlo a través de mis redes sociales. Estaré disponible para responderte tanto en <a href='https://www.linkedin.com/in/lucas-soria-g/' target='/blank' rel="noreferrer" className='linkedin'>Linkedin</a> como en 
                     <a href='https://github.com/LG-Soria' target='/blank' rel="noreferrer" className='github'> GitHub</a>.
-                    <br></br>Tambien te podes comunicar enviandome
-                    un email a   <a href='lucas_s96@outlook.com' target='/blank' className='outlook'>lucas_s96@outlook.com</a>  o rellenando el siguiente formulario con tus datos y me voy a estar comunicando en la brevedad.</p>
+                    <br></br>Tambien puedes comunicarte enviándome un email a <a href='lucas_s96@outlook.com' 
+                    target='/blank' className='outlook'>lucas_s96@outlook.com</a>   
+                   <br /> o completando el siguiente formulario con tus datos y me pondré en contacto contigo a la brevedad.</p>
             </div>
 
             <div className='contacto__formulario'>
                 <div>
-                    <form  ref={form} onSubmit={sendEmail}>
+                    <form ref={form} onSubmit={sendEmail}>
                         <div class="inputbox">
-                            <input required="required" type="text" name="from_name" id="name"  />
+                            <input required="required" type="text" name="from_name" id="name" />
                             <span>Nombre</span>
                             <i></i>
                         </div>
                         <div class="inputbox">
-                            <input required="required" type="email" name="from_email" id="email"   />
+                            <input required="required" type="email" name="from_email" id="email" />
                             <span>Email</span>
                             <i></i>
                         </div>
                         <div class="inputbox">
-                            <input required="required" type="text" name="subject" id="subject"   />
+                            <input required="required" type="text" name="subject" id="subject" />
                             <span>Asunto</span>
                             <i></i>
                         </div>
                         <div class="contacto__textarea inputbox">
-                            <textarea required="required" name="message" id="message"  />
+                            <textarea required="required" name="message" id="message" />
                             <span>Mensaje</span>
                             <i></i>
                         </div>
