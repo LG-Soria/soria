@@ -89,6 +89,10 @@
   font-weight: 400;
   font-style: normal;
   font-size: 1.5rem;
+  text-align: justify; 
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 20px;
 }
 .contacto__formulario {
   margin-top: 2.7rem;
@@ -219,8 +223,14 @@
 .contacto__textarea textarea:focus ~ i {
   height: 44px;
 }
-.contacto__texto > p > a {
+.contacto__texto > p > a{
+  transition-property: text-decoration;
+  transition-duration: 800ms;
+  transition-timing-function: ease-in-out;
+}
+.contacto__texto > p > a:hover {
   cursor: pointer;
+  text-decoration: underline; 
 }
 .linkedin {
   color: #0e76a8;

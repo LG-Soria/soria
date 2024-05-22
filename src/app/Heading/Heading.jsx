@@ -5,6 +5,7 @@ import { RiJavascriptFill } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { SiAdobephotoshop } from "react-icons/si";
+import { BiLogoMongodb } from "react-icons/bi";
 import coding2Image from "../../../public/Images/Coding6.png"; 
 import Image from "next/image";
 
@@ -34,7 +35,7 @@ function Heading() {
                     <li><FaReact className="w-[54px] h-[54px] text-[#61DAFB]" /></li>
                     <li><RiJavascriptFill className="w-[60px] h-[60px] text-[#F0DB4F]" /></li>
                     <li><FaGitAlt className="w-[50px] h-[55px] text-[#F34F29]" /></li>
-                    <li><SiTailwindcss className="w-[43px] h-[43px] text-[#32B1C1] bg-[#242938] rounded-md p-1" /></li>
+                    <li><BiLogoMongodb className="w-[43px] h-[43px] text-[#00ED64] bg-[#001E2B] rounded-md p-1" /></li>
                     <li> <FigmaIcon /></li>
                     <li><SiAdobephotoshop className="w-[43px] h-[43px] text-[#001E36]" /></li>
 

@@ -35,9 +35,8 @@ function Contacto() {
             <div className='contacto__texto'>
                 <h4>¿Te queres comunicar conmigo?</h4>
                 <p>
-                    Puedes hacerlo a través de mis redes sociales. Estaré disponible para responderte tanto en <a href='https://www.linkedin.com/in/lucas-soria-g/' target='/blank' rel="noreferrer" className='linkedin'>Linkedin</a> como en 
-                    <a href='https://github.com/LG-Soria' target='/blank' rel="noreferrer" className='github'> GitHub</a>.
-                    <br></br>Tambien puedes comunicarte enviándome un email a <a href='lucas_s96@outlook.com' 
+                    Puedes hacerlo a través de mis redes sociales. Estaré disponible para responderte tanto en <a href='https://www.linkedin.com/in/lucas-soria-g/' target='/blank' rel="noreferrer" className='linkedin'>Linkedin</a> como en  <a href='https://github.com/LG-Soria' target='/blank' rel="noreferrer" className='github'>GitHub</a>.
+                    <br></br>Tambien puedes comunicarte enviándome un email a <a href='mailto:lucas_s96@outlook.com' 
                     target='/blank' className='outlook'>lucas_s96@outlook.com</a>   
                    <br /> o completando el siguiente formulario con tus datos y me pondré en contacto contigo.</p>
             </div>
