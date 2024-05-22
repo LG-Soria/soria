@@ -32,7 +32,7 @@ function Navigation() {
                     className={menu ? ('closeMenu') : ("hidden")}
                 />
             </div>
-            <div className='responsiveMenu'  ref={menuRef}>
+            <div className={`responsiveMenu ${menu ? '' : 'hidden'}`} ref={menuRef}>
                 <div className={menu ? ('yesMenu') : ("noMenu")}>
                     <ul className='flex flex-row  '>
                         <li><a href="#heading">Inicio</a></li>
