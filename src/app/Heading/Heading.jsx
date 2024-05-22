@@ -47,7 +47,7 @@ function Heading() {
                     habiendo trabajado en proyectos  de creaciones de landing pages
                     y paginas complejas con mas de una vista y visualizacion de datos.
                     Tambien cuento con conocimientos practicos en la creacion e implementacion
-                    de bases de datos SQL, como tambien no SQL.
+                    de bases de datos SQL y no SQL.
                 </p>
             </div>
 

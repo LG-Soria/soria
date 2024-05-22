@@ -23,7 +23,7 @@ function Proyectos() {
     },
     {
       id: 2,
-      src:  "/Images/proyecto2.jpg",
+      src: "/Images/proyecto2.jpg",
       alt: (id) => `Proyecto ${id}`,
       title: "Blog page",
       link: "https://lg-soria.github.io/NewHomepageMain/",
@@ -31,7 +31,7 @@ function Proyectos() {
     },
     {
       id: 3,
-      src:  "/Images/proyecto3.jpg",
+      src: "/Images/proyecto3.jpg",
       alt: (id) => `Proyecto ${id}`,
       title: "Portfolio Photography",
       link: "https://lg-soria.github.io/photography-album-web/",
@@ -40,7 +40,7 @@ function Proyectos() {
     },
     {
       id: 4,
-      src:  "/Images/proyecto4.png",
+      src: "/Images/proyecto4.png",
       alt: (id) => `Proyecto ${id}`,
       title: "Burguer Store",
       link: "www.github.com/lg-soria/landingpage",
@@ -58,7 +58,7 @@ function Proyectos() {
     },
     {
       id: 6,
-      src:  "/Images/proyecto6.png",
+      src: "/Images/proyecto6.png",
       alt: (id) => `Proyecto ${id}`,
       title: "Clothes Store ",
       link: "www.github.com/lg-soria/landingpage",
@@ -70,23 +70,26 @@ function Proyectos() {
   return (
     <div className='proyectos__container' >
 
-      <div className='titulo' id='project'><h2>Proyectos</h2>
+      <div className='titulo' id='project'>
+        <h2>Proyectos</h2>
       </div>
-{/**  <div className='subline'></div> */}
+      {/**  <div className='subline'></div> */}
       <div className='proyectos'>
         <ul>
           {proyectList.map((image, index) => {
             return (
-              <li className='item ' key={index}>
-              
-                <Image className='image'  width={500}
-                layout="responsive"
-                height={500} key={index} src={image.src} alt={image.title} />
-                <div className='item__text'>
-                <a href={image.link} target="_blank" rel="noreferrer" className='item__title'><p >{image.title}</p></a>
-                  <a href={image.linkGithub} rel="noreferrer" className='span' target="_blank"> <FaGithub className='icon'/></a>
-                </div>
-                 </li>
+              <div>       <a className='cursor-pointer' href={image.link} target="_blank" rel="noopener noreferrer">
+                <li className='item ' key={index}>
+
+                  <Image className='image' width={500}
+                    layout="responsive"
+                    height={500} key={index} src={image.src} alt={image.title} />
+                  <div className='item__text'>
+                    <a href={image.link} target="_blank" rel="noreferrer" className='item__title'><p >{image.title}</p></a>
+                    <a href={image.linkGithub} rel="noreferrer" className='span' target="_blank"> <FaGithub className='icon' /></a>
+                  </div>
+                </li>  </a>
+              </div>
             )
           })}
 
@@ -98,13 +101,13 @@ function Proyectos() {
   <IoIosArrowDown className='iconArrow' /> */
       }
       </div>
- { /**  <div className='proyectos__circle1Container'> 
+      { /**  <div className='proyectos__circle1Container'> 
    
     </div>
         <div className='proyectos__circle2Container'>
       <div className='contacto__circle2'></div>
     </div> */}
-     <div className='contacto__circle1'></div>
+      <div className='contacto__circle1'></div>
 
 
     </div>

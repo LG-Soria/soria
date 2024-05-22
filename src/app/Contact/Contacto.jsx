@@ -39,7 +39,7 @@ function Contacto() {
                     <a href='https://github.com/LG-Soria' target='/blank' rel="noreferrer" className='github'> GitHub</a>.
                     <br></br>Tambien puedes comunicarte enviándome un email a <a href='lucas_s96@outlook.com' 
                     target='/blank' className='outlook'>lucas_s96@outlook.com</a>   
-                   <br /> o completando el siguiente formulario con tus datos y me pondré en contacto contigo a la brevedad.</p>
+                   <br /> o completando el siguiente formulario con tus datos y me pondré en contacto contigo.</p>
             </div>
 
             <div className='contacto__formulario'>

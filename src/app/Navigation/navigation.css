@@ -1,7 +1,7 @@
 @keyframes enhance-header {
   to {
     backdrop-filter: blur(22px);
-    background: linear-gradient(180deg, #2d0fd677, #0000);
+    background: linear-gradient(180deg, #2d0fd677, #6875e979);
     height: 80px;
     color: #ff7a00;
   }
@@ -54,7 +54,7 @@
   cursor: pointer;
   transition-duration: 0.3s;
   transition-timing-function: ease-in;
-  transition-property: background-color, bottom, right;
+  transition-property: background-color, bottom, right, color;
 }
 .menu > ul > li:hover,
 .menu > ul > li:active,
@@ -72,8 +72,14 @@
 }
 
 
-@media screen and (max-width: 430px) {
-
+@media screen and (max-width: 480px) {
+  .navigation{
+    width: 100vw;
+  }
+  .logo{
+    right: 15px;
+    position: relative;
+  }
   .logo > p {
     font-size: 3rem;
     width: 50%;
@@ -130,12 +136,30 @@
     width: 50px;
     height: 50px;
     cursor: pointer;
-    right: 20px;
+    right: 35px;
     top: 20px;
     z-index: 10;
     transition-property: opacity;
     transition-duration: 5s;
     transition-timing-function: ease-in;
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1440px){
+  .navigation{
+    height: 90px;
+  }
+  .logo > p{
+    font-size: 2.5rem;
+  }
+
+  .menu{
+    grid-column: 4/9;
+  }
+  .menu > ul > li{
+    width: 7.5rem;
+    height: 45px;
+    font-size: 1rem;
   }
 }

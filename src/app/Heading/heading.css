@@ -37,8 +37,8 @@
   animation: reveal linear both;
   animation-timeline: scroll(root);
   animation-range: 0 460px;
-  grid-column: 1/6;
-
+  grid-column: 2/6;
+  grid-row: 2/11;
 }
 
 .imgBox img {
@@ -46,13 +46,12 @@
   height: 600px;
   position: relative;
   margin: auto;
-  top: 100px;
-  left: 50px;
+  top: 50px;
+  left: 120px;
 }
 .cartel {
-  grid-row: 5/8;
-  left: 6rem;
-  grid-column: 6/10;
+  grid-row: 4/8;
+  grid-column: 8/11;
   position: relative;
   width: 512px;
   height: 150px;
@@ -104,9 +103,8 @@
 }
 
 .iconos {
-  grid-column: 7/12;
-  grid-row: 8/9;
-  right: 2.8rem;
+  grid-column: 8/12;
+  grid-row: 7/9;
   bottom: 1rem;
   position: relative;
   width: 31.7rem;
@@ -124,9 +122,8 @@
 }
 
 .texto {
-  grid-column: 7/12;
-  grid-row: 9/12;
-  right: 1.5rem;
+  grid-column: 8/11;
+  grid-row: 8/12;
   position: relative;
 
   animation: reveal linear both;
@@ -136,20 +133,20 @@
 }
 
 .circle-one {
-  width: 100%;
+  width: 50%;
   height: 100%;
-  position: relative;
+  position: absolute;
   grid-column: 1/7;
-  grid-row: 2/12;
+  grid-row: 1/12;
   left: 0px;
   bottom: 0px;
 }
 
 .circle-one::after {
   content: "";
-  background-image: radial-gradient(circle 600px, #00a3ffa9, #ffffff00);
+  background-image: radial-gradient(circle 500px, #00a3ffa9, #ffffff00);
   border-radius: 50%;
-  width: 1200px;
+  width: 1100px;
   height: 1200px;
   position: relative;
   display: inline-block;
@@ -190,13 +187,50 @@
   bottom: 100px;
 }
 
-@media screen and (max-width: 430px) {
+
+@media (max-width: 1440px) {
+  .heading{
+    height: 600px;
+  }
+
+  .imgBox{
+    grid-column: 1/5;
+  }
+  .imgBox img {
+    width: 500px;
+    height: 500px;
+    top: 50px;
+    left: 0px;
+  }
+
+  .cartel {
+    grid-row: 3/8;
+    left: 30px;
+  }
+
+  .iconos {
+    grid-row: 6/9;
+    left: 30px;
+    bottom: 0px;
+    top: 10px;
+
+  }
+  .texto{
+    width: 95%;
+    grid-row: 7/12;
+    left: 30px;
+    top: 20px;
+
+  }
+
+}
+@media  (max-width: 480px) {
   .heading {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    width: 100vw;
+    width: 470px;
     margin: 0 10px;
-
+    height: 720px;
   }
   .imgBox {
     display: none;
@@ -212,12 +246,14 @@
     animation: reveal linear both;
     animation-timeline: scroll(root);
     animation-range: 0 500px;
+    padding: 5px 30px;
   }
   .cartel--nombre {
     font-size: 3.8rem;
     line-height: 65px;
     color: #00a3ff;
   }
+ 
   .caja-texto > p {
     font-size: 1.7rem;
     top: 10px;
@@ -235,7 +271,7 @@
     bottom: 0rem;
     top: 60px;
     position: relative;
-    width: 90vw;
+    width: 80vw;
     animation: reveal linear both;
     animation-timeline: scroll(root);
     animation-range: 0 500px;
@@ -257,5 +293,4 @@
   .circle-one {
     display: none;
   }
-  
 }
