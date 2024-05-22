@@ -71,12 +71,14 @@
   display: none;
 }
 
-
 @media screen and (max-width: 480px) {
-  .navigation{
+  .hiddenMenu {
+    pointer-events: none
+  }
+  .navigation {
     width: calc(100vw - 1px);
   }
-  .logo{
+  .logo {
     right: 15px;
     position: relative;
   }
@@ -84,10 +86,10 @@
     font-size: 3rem;
     width: 50%;
   }
-  .menu{
+  .menu {
     display: none;
   }
-  .iconsMenu{
+  .iconsMenu {
     display: inline-block;
   }
   .responsiveMenu {
@@ -101,18 +103,18 @@
   }
   .yesMenu,
   .noMenu {
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      position: absolute;
-      width: 250px;
-      height: 300px;
-      border-radius: 5px;
-      font-weight: 700;
-      transition-property: right, opacity;
-      transition-duration: 800ms;
-      transition-timing-function: ease-in;
-      top: -5px;
-      background-color: #f8f9fa; /* Fondo neutro claro */
-      color: #333; /* Texto oscuro para buen contraste */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition-property: right, opacity;
+    transition-duration: 800ms;
+    transition-timing-function: ease-in;
+    top: -5px;
+    background-color: #f8f9fa; /* Fondo neutro claro */
+    color: #333; /* Texto oscuro para buen contraste */
   }
   .yesMenu {
     right: 0px;
@@ -130,7 +132,7 @@
     align-items: center;
     margin-top: 60px;
     gap: 30px;
-    color: #007bff
+    color: #007bff;
   }
   .yesMenu > ul > li:hover,
   .yesMenu > ul > li:focus,
@@ -159,18 +161,18 @@
   }
 }
 
-@media screen and (max-width: 1440px){
-  .navigation{
+@media screen and (max-width: 1440px) {
+  .navigation {
     height: 90px;
   }
-  .logo > p{
+  .logo > p {
     font-size: 2.5rem;
   }
 
-  .menu{
+  .menu {
     grid-column: 4/9;
   }
-  .menu > ul > li{
+  .menu > ul > li {
     width: 7.5rem;
     height: 45px;
     font-size: 1rem;
