@@ -83,7 +83,7 @@ function Proyectos() {
                 layout="responsive"
                 height={500} key={index} src={image.src} alt={image.title} />
                 <div className='item__text'>
-                <a href={image.link} target="_blank" rel="noreferrer"><p className='item__title'>{image.title}</p></a>
+                <a href={image.link} target="_blank" rel="noreferrer" className='item__title'><p >{image.title}</p></a>
                   <a href={image.linkGithub} rel="noreferrer" className='span' target="_blank"> <FaGithub className='icon'/></a>
                 </div>
                  </li>

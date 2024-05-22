@@ -122,7 +122,6 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  cursor: pointer;
 }
 .item:hover::before {
   opacity: 1;
@@ -181,7 +180,14 @@
   transition-property: transform, filter, scale;
   transition-duration: 800ms;
 }
-.icon:hover {
+.item__title{
+  transition-property: filter, scale;
+  transition-duration: 800ms;
+  transition-timing-function: ease-in;
+
+}
+.icon:hover,
+.item__title:hover {
   filter: drop-shadow(0 1mm 2mm rgba(249, 250, 253, 0.555));
   scale: 1.1;
 }
