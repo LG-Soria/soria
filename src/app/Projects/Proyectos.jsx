@@ -78,8 +78,8 @@ function Proyectos() {
         <ul>
           {proyectList.map((image, index) => {
             return (
-              <div>       <a className='cursor-pointer' href={image.link} target="_blank" rel="noopener noreferrer">
-                <li className='item ' key={index}>
+              <div key={index}>       <a className='cursor-pointer' href={image.link} target="_blank" rel="noopener noreferrer">
+                <li className='item '>
 
                   <Image className='image' width={500}
                     layout="responsive"
