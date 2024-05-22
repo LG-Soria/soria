@@ -51,7 +51,7 @@ function Contacto() {
                             <i></i>
                         </div>
                         <div class="inputbox">
-                            <input required="required" type="email" name="from_email" id="email" />
+                            <input required="required" type="text" name="from_email" id="email" />
                             <span>Email</span>
                             <i></i>
                         </div>

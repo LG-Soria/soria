@@ -1,6 +1,7 @@
 @keyframes enhance-header {
   to {
-    background-color: #000;
+    backdrop-filter: blur(22px);
+    background: linear-gradient(180deg, #2d0fd677, #0000);
     height: 80px;
     color: #ff7a00;
   }
@@ -15,7 +16,6 @@
   top: 0;
   left: 0;
   z-index: 500;
-
   animation: enhance-header linear both;
   animation-timeline: scroll(root);
   animation-range: 0 500px;
@@ -23,6 +23,7 @@
 .logo {
   grid-area: 1/2/2/3;
   margin: auto;
+  cursor: default;
 }
 .logo > p {
   font-size: 3rem;
