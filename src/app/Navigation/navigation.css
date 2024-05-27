@@ -26,7 +26,7 @@
   grid-column: 11/12;
   display: flex;
   height: 3rem;
-  width: 7rem;
+  width: 6rem;
   gap: 10px;
   padding: 10px;
   border-radius: 8px;
@@ -124,6 +124,23 @@
 }
 
 @media screen and (max-width: 480px) {
+  .language-switcher{
+    display: none;
+  }
+  
+.language-switcher-responsive {
+  margin: 4rem auto;
+  display: flex;
+  height: 3rem;
+  width: 7rem;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
   .hiddenMenu {
     pointer-events: none
   }

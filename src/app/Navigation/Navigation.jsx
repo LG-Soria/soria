@@ -43,6 +43,10 @@ function Navigation(props) {
                         <li>{props.spanish ? (<a href="#contact">Contacto</a>) : (<a href="#contact">Contact</a>)}
                         </li>
                     </ul>
+                    <div className='language-switcher-responsive'>
+                <button onClick={() =>  props.setSpanish(true)} className={`language-button ${props.spanish ? 'active' : ''}`} >ES</button>
+                <button onClick={() =>  props.setSpanish(false)}className={`language-button ${props.spanish ? '' : 'active'}`}>EN</button>
+            </div>
                 </div>
 
             </div>
