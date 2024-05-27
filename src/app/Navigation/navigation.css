@@ -2,8 +2,7 @@
   to {
     backdrop-filter: blur(22px);
     background: linear-gradient(180deg, #2d0fd677, #007bff79);
-    height: 80px;
-    color: #ff7a00;
+    height: 5rem;
   }
 }
 .navigation {
@@ -11,7 +10,7 @@
   grid-template-columns: repeat(12, 1fr);
   position: sticky;
   width: 100%;
-  height: 100px;
+  height: 6.25rem;
   background-color: transparent;
   top: 0;
   left: 0;
@@ -20,6 +19,59 @@
   animation-timeline: scroll(root);
   animation-range: 0 500px;
 }
+
+.language-switcher {
+  margin: auto;
+
+  grid-column: 11/12;
+  display: flex;
+  height: 3rem;
+  width: 7rem;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.language-button {
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #3333339a;
+  background-color: transparent;
+  border: 1px solid #dddddd86;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 1.5rem;
+  width: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.language-button:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+.language-button:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #007bff;
+}
+
+.language-button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.language-button.active:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
 .logo {
   grid-area: 1/2/2/3;
   margin: auto;
@@ -45,7 +97,7 @@
 .noMenu > ul > li,
 .yesMenu > ul > li {
   width: 8rem;
-  height: 49px;
+  height: 3.063rem;
   display: flex;
   font-size: 1.2rem;
   justify-content: center;
@@ -95,8 +147,8 @@
   .responsiveMenu {
     overflow: hidden;
     display: inline-block;
-    width: 250px;
-    height: 300px;
+    width: 50vw;
+    height: 100vh;
     position: absolute;
     right: 0px;
     z-index: -10;
@@ -105,23 +157,21 @@
   .noMenu {
     border: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
-    width: 250px;
-    height: 300px;
-    border-radius: 5px;
+    width: 50vw;
+    height: 100vh;
     font-weight: 700;
     transition-property: right, opacity;
     transition-duration: 800ms;
     transition-timing-function: ease-in;
-    top: -5px;
     background-color: #f8f9fa; /* Fondo neutro claro */
     color: #333; /* Texto oscuro para buen contraste */
   }
   .yesMenu {
-    right: 0px;
+    right:0rem;
     opacity: 1;
   }
   .noMenu {
-    right: -290px;
+    right: -18.125rem;
     opacity: 0;
   }
   .yesMenu > ul,
@@ -148,11 +198,11 @@
   .closeMenu {
     display: block;
     position: absolute;
-    width: 35px;
-    height: 35px;
+    width: 2.188rem;
+    height:  2.188rem;
     cursor: pointer;
-    right: 20px;
-    top: 30px;
+    right: 1.25rem;
+    top: 1.875rem;
     z-index: 10;
     transition-property: opacity;
     transition-duration: 5s;
@@ -163,7 +213,7 @@
 
 @media screen and (max-width: 1440px) {
   .navigation {
-    height: 90px;
+    height: 5.625rem;
   }
   .logo > p {
     font-size: 2.5rem;
@@ -174,7 +224,7 @@
   }
   .menu > ul > li {
     width: 7.5rem;
-    height: 45px;
+    height: 2.813rem;
     font-size: 1rem;
   }
 }

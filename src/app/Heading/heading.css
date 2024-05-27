@@ -25,14 +25,14 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  height: 720px;
+  height: 45rem;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 .imgBox {
-  width: 800px;
-  height: 800px;
+  width: 50rem;
+  height: 50rem;
   position: absolute;
   animation: reveal linear both;
   animation-timeline: scroll(root);
@@ -42,19 +42,19 @@
 }
 
 .imgBox img {
-  width: 600px;
-  height: 600px;
+  width: 37.5rem;
+  height: 37.5rem;
   position: relative;
   margin: auto;
-  top: 50px;
-  left: 120px;
+  top: 3.125rem;
+  left: 7.5rem;
 }
 .cartel {
   grid-row: 4/8;
   grid-column: 8/11;
   position: relative;
-  width: 512px;
-  height: 150px;
+  width: 32rem;
+  height: 9.375rem;
   opacity: 1;
   background: rgba(255, 255, 255, 0.32);
   border-radius: 16px;
@@ -190,7 +190,7 @@
 
 @media (max-width: 1440px) {
   .heading{
-    height: 600px;
+    height: 37.5rem;
   }
 
   .imgBox{
@@ -228,9 +228,9 @@
   .heading {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    width: calc(100vw - 10px);
-    margin: 0 10px;
-    height: 720px;
+    width: calc(100vw - 0.625rem);
+    margin: 0 0.625rem;
+    height: 45rem;
   }
   .imgBox {
     display: none;
@@ -242,22 +242,22 @@
     opacity: 1;
     left: 0px;
     width: 95vw;
-    height: 300px;
+    height: 18.75rem;
     animation: reveal linear both;
     animation-timeline: scroll(root);
-    animation-range: 0 500px;
-    padding: 5px 30px;
+    animation-range: 0 31.25rem;
+    padding: 0.313rem 1.875rem;
   }
   .cartel--nombre {
     font-size: 3.8rem;
-    line-height: 65px;
+    line-height: 4.063rem;
     color: #00a3ff;
   }
  
   .caja-texto > p {
     font-size: 1.7rem;
-    top: 10px;
-    left: -3px;
+    top: 0.625rem;
+    left: -0.188rem;
   }
   .caja-texto > h1 {
     position: relative;
@@ -269,24 +269,24 @@
     grid-row: 3/4;
     right: 0rem;
     bottom: 0rem;
-    top: 60px;
+    top: 3.75rem;
     position: relative;
     width: 80vw;
     animation: reveal linear both;
     animation-timeline: scroll(root);
-    animation-range: 0 500px;
+    animation-range: 0 31.25rem;
     position: relative;
   }
 
   .texto {
     grid-column: 1/5;
     grid-row: 4/5;
-    right: -10px;
+    right: -0.625rem;
     width: 85vw;
     position: relative;
     animation: reveal linear both;
     animation-timeline: scroll(root);
-    animation-range: 0 500px;
+    animation-range: 0 31.25rem;
     position: relative;
   }
   .heading__circle2Container,

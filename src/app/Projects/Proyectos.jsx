@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 
 
-function Proyectos() {
+function Proyectos(props) {
   const proyectList = [
     {
       id: 1,
@@ -43,7 +43,7 @@ function Proyectos() {
       src: "/Images/proyecto4.png",
       alt: (id) => `Proyecto ${id}`,
       title: "Burguer Store",
-      link: "https://lg-soria.github.io/burger-project/",
+      link: "https://burger-project-bice.vercel.app/",
       linkGithub: "https://github.com/LG-Soria/burger-project"
 
     },
@@ -51,7 +51,7 @@ function Proyectos() {
       id: 5,
       src: "/Images/proyecto5.jpg",
       alt: (id) => `Proyecto 5`,
-      title: "Proyecto Good-Foot",
+      title: "Project Good-Foot",
       link: "https://lg-soria.github.io/Fruto-y-fruta-proyecto/",
       linkGithub: "https://github.com/LG-Soria/Fruto-y-fruta-proyecto"
 
@@ -71,7 +71,7 @@ function Proyectos() {
     <div className='proyectos__container' >
 
       <div className='titulo' id='project'>
-        <h2>Proyectos</h2>
+       {props.spanish ? (<h2>Proyectos</h2>): (<h2>Projects</h2>)} 
       </div>
       {/**  <div className='subline'></div> */}
       <div className='proyectos'>

@@ -6,11 +6,11 @@ import { FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { SiAdobephotoshop } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
-import coding2Image from "../../../public/Images/Coding6.png"; 
+import coding2Image from "../../../public/Images/Coding6.png";
 import Image from "next/image";
 
 
-function Heading() {
+function Heading(props) {
 
 
 
@@ -18,16 +18,20 @@ function Heading() {
         <div className="heading" id="heading">
 
             <div className="imgBox">
-                <Image 
-                width={800}
-                height={800} src="/Images/Coding6.png" alt="boy coding" />
+                <Image
+                    width={800}
+                    height={800} src="/Images/Coding6.png" alt="boy coding" />
             </div>
             <div className="cartel">
-                <div className="caja-texto">
+                {props.spanish ? (<div className="caja-texto">
                     <p className="">Hola mi nombre es</p>
                     <span className="cartel--nombre">Lucas G. Soria</span>
                     <h1>FRONT-END DEVELOPER</h1>
-                </div>
+                </div>) : (<div className="caja-texto">
+                    <p className="">Hello, mi name is</p>
+                    <span className="cartel--nombre">Lucas G. Soria</span>
+                    <h1>FRONT-END DEVELOPER</h1>
+                </div>)}
             </div>
 
             <div className="iconos">
@@ -43,14 +47,19 @@ function Heading() {
 
             </div>
 
-            <div className="texto">
+            {props.spanish ? (<div className="texto">
                 <p>Tengo experiencia y conocimientos en el desarrollo web,
                     habiendo trabajado en proyectos  de creaciones de landing pages
                     y paginas complejas con mas de una vista y visualizacion de datos.
                     Tambien cuento con conocimientos practicos en la creacion e implementacion
                     de bases de datos SQL y no SQL.
                 </p>
-            </div>
+            </div>) : (<div className="texto">
+                <p>I have experience and expertise in web development, having worked on projects ranging from creating landing 
+                    pages to complex websites with multiple views and data visualization. 
+                    I also have practical knowledge in creating and implementing both SQL and NoSQL databases
+                </p>
+            </div>)}
 
             <div className="circle-one"></div>
 

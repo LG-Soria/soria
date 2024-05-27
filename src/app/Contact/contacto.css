@@ -50,12 +50,7 @@
   width: 600px;
   animation-range: 0 600px;
 }
-.contacto__subline {
-  width: 51.9rem;
-  height: 0.8rem;
-  position: relative;
-  background-color: black;
-}
+
 
 .contacto__texto,
 .contacto__formulario {
@@ -73,7 +68,9 @@
   row-gap: 3rem;
   align-items: center;
   margin-top: 3rem;
-  text-align: center;
+  text-align: start;
+  justify-content: start;
+  align-items: start;
 }
 
 .contacto__texto > h4 {
@@ -88,11 +85,12 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.5rem;
-  text-align: justify; 
+  font-size: 1.6rem;
+  text-align: left; 
   line-height: 1.6;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
+  text-wrap: pretty;
 }
 .contacto__formulario {
   margin-top: 2.7rem;
@@ -251,6 +249,7 @@
   height: 3rem;
   bottom: 2rem;
   position: relative;
+  font-weight: 600;
 }
 .contacto__button > button {
   width: 7rem;
@@ -259,7 +258,7 @@
   margin-right: 0.5rem;
   color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.13);
-  background-color: #619ecfad;
+  background-color: #df8f20;
   transition-duration: 800ms;
   transition-property: scale, font-weight, background-color, color;
 }
@@ -267,7 +266,7 @@
 .contacto__button > button:hover {
   background-color: #ff7a00;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   scale: 1.1;
   position: relative;
   box-shadow: 2px 4px 5px 1px rgba(0, 0, 0, 0.37);
@@ -381,6 +380,12 @@
     height: 80%;
     display: flex;
     flex-direction: column;
+  }
+  .contacto__button {
+    justify-content: center;
+  }
+  .contacto__button > button {
+    margin-right: 0rem;
   }
 
   .circleContainer,
